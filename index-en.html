@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Polyteknisk Boghandel – Home</title>
+  <link rel="icon" type="image/svg+xml" href="assets/polyteknisk-tab-icon-approx.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+  <!-- Header injected by partials.js -->
+  <div id="header-mount">  </div>
+
+  <section class="hero-section">
+    <img class="hero-img"
+      src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1400&q=80"
+      alt="Polyteknisk Boghandel">
+    <div class="hero-overlay">
+      <div class="container">
+        <div class="hero-text">
+          <h1 data-i18n="hero.title">Your bookstore – <em>since 1956</em></h1>
+          <p data-i18n="hero.sub">Specialists in academic books for students and professionals.</p>
+          <div class="d-flex gap-3 flex-wrap">
+            <a href="product.html?cat=students" class="btn-hero" data-i18n="hero.btn1">Find your studybooks</a>
+            <a href="product.html" class="btn-hero-outline" data-i18n="hero.btn2">Newly published books</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-wrap bg-cream">
+    <div class="container">
+      <h2 class="section-heading" data-i18n="section.study">Find your studybooks</h2>
+      <div class="position-relative px-4">
+        <div id="studyCarousel" class="carousel slide book-carousel" data-bs-ride="carousel">
+          <div class="carousel-inner" id="study-carousel-inner">
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#studyCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#studyCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div style="background:var(--brand-primary); color:white; padding:18px 0;">
+    <div class="container">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3">
+          <div style="font-size:22px; margin-bottom:4px;">🚚</div>
+          <div style="font-size:13px; font-weight:600;">Free shipping over DKK 299</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div style="font-size:22px; margin-bottom:4px;">📦</div>
+          <div style="font-size:13px; font-weight:600;">Fast delivery 2-5 days</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div style="font-size:22px; margin-bottom:4px;">🔖</div>
+          <div style="font-size:13px; font-weight:600;">Booklist guarantee</div>
+        </div>
+        <div class="col-6 col-md-3">
+          <div style="font-size:22px; margin-bottom:4px;">💳</div>
+          <div style="font-size:13px; font-weight:600;">Secure payment</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="section-wrap">
+    <div class="container">
+      <h2 class="section-heading" data-i18n="section.new">Newly published books</h2>
+      <div class="position-relative px-4">
+        <div id="newCarousel" class="carousel slide book-carousel" data-bs-ride="false">
+          <div class="carousel-inner" id="new-carousel-inner">
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#newCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#newCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+          </button>
+        </div>
+      </div>
+      <div class="text-center mt-5">
+        <a href="product.html" class="btn-hero" style="font-size:13px;">See all books →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-wrap bg-warm">
+    <div class="container">
+      <h2 class="section-heading">Our specialties</h2>
+      <div class="row g-3">
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="product.html?cat=dtu" class="text-decoration-none">
+            <div class="category-card category-accent-red text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center gap-2"
+                 style="transition:box-shadow 0.2s,transform 0.2s;"
+                 onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';this.style.transform='translateY(-2px)'"
+                 onmouseout="this.style.boxShadow='';this.style.transform=''">
+              <div class="category-icon" style="font-size:2rem;">🎓</div>
+              <div class="category-title" style="font-family:var(--font-display);font-size:13px;font-weight:600;">DTU</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="product.html?cat=engineering" class="text-decoration-none">
+            <div class="category-card category-accent-orange text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center gap-2"
+                 style="transition:box-shadow 0.2s,transform 0.2s;"
+                 onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';this.style.transform='translateY(-2px)'"
+                 onmouseout="this.style.boxShadow='';this.style.transform=''">
+              <div class="category-icon" style="font-size:2rem;">⚙️</div>
+              <div class="category-title" style="font-family:var(--font-display);font-size:13px;font-weight:600;">Engineering science</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="product.html?cat=building" class="text-decoration-none">
+            <div class="category-card category-accent-teal text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center gap-2"
+                 style="transition:box-shadow 0.2s,transform 0.2s;"
+                 onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';this.style.transform='translateY(-2px)'"
+                 onmouseout="this.style.boxShadow='';this.style.transform=''">
+              <div class="category-icon" style="font-size:2rem;">🏗️</div>
+              <div class="category-title" style="font-family:var(--font-display);font-size:13px;font-weight:600;">Construction</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="product.html?cat=it" class="text-decoration-none">
+            <div class="category-card category-accent-dark text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center gap-2"
+                 style="transition:box-shadow 0.2s,transform 0.2s;"
+                 onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';this.style.transform='translateY(-2px)'"
+                 onmouseout="this.style.boxShadow='';this.style.transform=''">
+              <div class="category-icon" style="font-size:2rem;">💻</div>
+              <div class="category-title" style="font-family:var(--font-display);font-size:13px;font-weight:600;">IT</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="product.html?cat=science" class="text-decoration-none">
+            <div class="category-card category-accent-red text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center gap-2"
+                 style="transition:box-shadow 0.2s,transform 0.2s;"
+                 onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';this.style.transform='translateY(-2px)'"
+                 onmouseout="this.style.boxShadow='';this.style.transform=''">
+              <div class="category-icon" style="font-size:2rem;">🔬</div>
+              <div class="category-title" style="font-family:var(--font-display);font-size:13px;font-weight:600;">Science</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2">
+          <a href="product.html?cat=popular" class="text-decoration-none">
+            <div class="category-card category-accent-orange text-center p-4 h-100 d-flex flex-column align-items-center justify-content-center gap-2"
+                 style="transition:box-shadow 0.2s,transform 0.2s;"
+                 onmouseover="this.style.boxShadow='0 4px 16px rgba(0,0,0,0.12)';this.style.transform='translateY(-2px)'"
+                 onmouseout="this.style.boxShadow='';this.style.transform=''">
+              <div class="category-icon" style="font-size:2rem;">🌍</div>
+              <div class="category-title" style="font-family:var(--font-display);font-size:13px;font-weight:600;">Popular science</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal fade" id="scanner-modal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content scanner-modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Scan book barcode</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="scanner-stage">
+            <video id="scanner-video" autoplay playsinline muted></video>
+            <div class="scanner-frame"></div>
+            <div id="scanner-status" class="scanner-status">Camera ready</div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn-hero-outline" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer-mount"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="data.js"></script>
+  <script src="partials-en.js"></script>
+  <script src="cart.js"></script>
+  <script src="main.js"></script>
+  <script>
+    /**
+     * Build carousel slides — groups books into rows of 4 (desktop) per slide
+     */
+    document.addEventListener('DOMContentLoaded', function () {
+
+      function buildCarouselSlides(containerId, books) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        const perSlide = 4;
+        const slides = [];
+        for (let i = 0; i < books.length; i += perSlide) {
+          slides.push(books.slice(i, i + perSlide));
+        }
+        container.innerHTML = slides.map((group, idx) => `
+          <div class="carousel-item ${idx === 0 ? 'active' : ''}">
+            <div class="row g-3">
+              ${group.map(b => `<div class="col-6 col-md-3">${buildBookCard(b)}</div>`).join('')}
+            </div>
+          </div>
+        `).join('');
+      }
+
+      // Study books: filter by student/study tags
+      const studyBooks = BOOKS.filter(b =>
+        b.category.some(c => ['students','dtu','zealand','ek','management'].includes(c))
+      );
+      buildCarouselSlides('study-carousel-inner', studyBooks);
+
+      // New releases: tagged New or recent year
+      const newBooks = BOOKS.filter(b => b.tags.includes('New') || b.year >= 2024);
+      buildCarouselSlides('new-carousel-inner', newBooks);
+    });
+  </script>
+</body>
+</html>
