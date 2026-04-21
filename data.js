@@ -197,7 +197,7 @@ function buildBookCard(book, extraClass = '') {
         <div class="book-card-author">${book.author}</div>
         <div class="book-card-price">${fmtPrice(book.price)}</div>
         <button class="btn-add-cart" onclick="addToCart(BOOKS.find(b=>b.id===${book.id}))">
-          🛒 <span data-i18n="product.addcart">Læg i kurv</span>
+          🛒 <span>Læg i kurv</span>
         </button>
       </div>
     </div>`;
