@@ -229,5 +229,10 @@
       buildCarouselSlides('new-carousel-inner', newBooks);
     });
   </script>
+  <script>
+    if (location.pathname.endsWith('/polyteknisk-boghandel/')) {
+      location.replace('/polyteknisk-boghandel/index.html' + location.search + location.hash);
+    }
+  </script>
 </body>
 </html>
