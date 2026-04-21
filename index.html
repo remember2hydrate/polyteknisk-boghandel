@@ -230,8 +230,8 @@
     });
   </script>
   <script>
-    if (location.pathname.endsWith('/polyteknisk-boghandel/')) {
-      location.replace('/polyteknisk-boghandel/index.html' + location.search + location.hash);
+    if (!window.location.pathname.endsWith('index.html')) {
+      window.location.href = window.location.pathname + '/index.html';
     }
   </script>
 </body>
