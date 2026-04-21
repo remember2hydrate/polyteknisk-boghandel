@@ -1,5 +1,6 @@
-# Polyteknisk UI Demo (2026) https://remember2hydrate.github.io/polyteknisk-boghandel/index.html
+# Polyteknisk UI Demo (2026) 
 
+https://remember2hydrate.github.io/polyteknisk-boghandel/index.html
 Static frontend demo replicating core UX flows of https://polyteknisk.dk/ with a modernized UI.
 
 No backend. No APIs. Everything runs client-side.
